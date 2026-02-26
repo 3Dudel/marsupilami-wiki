@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marsupilami Wiki – Titan Edition</title>
+    <meta
+      name="description"
+      content="Ein großes, interaktives Marsupilami-Wiki mit Fakten, Zeitleiste, Galerie, Powerscore und Quiz."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="hero" id="top">
+      <nav class="glass nav-wrap">
+        <h1 class="logo">Marsupilami<span>Wiki</span> <em>Titan</em></h1>
+        <div class="nav-links">
+          <a href="#fakten">Fakten</a>
+          <a href="#power">Power</a>
+          <a href="#zeitleiste">Zeitleiste</a>
+          <a href="#quiz">Quiz</a>
+        </div>
+      </nav>
+
+      <section class="hero-content glass">
+        <p class="eyebrow">Gröööößer · Möchtiger · Interaktiver</p>
+        <h2>Das Marsupilami-Wiki in Maximalgröße</h2>
+        <p>
+          Willkommen in einer überarbeiteten Titan-Edition: mehr Inhalte, mehr Interaktionen,
+          mehr visuelle Wucht – mit bekannten Fakten zur Figur aus Comic, TV und Film.
+        </p>
+        <div class="hero-stats" id="heroStats"></div>
+        <div class="cta-row">
+          <a class="btn primary" href="#fakten">Mega-Fakten starten</a>
+          <button class="btn ghost" id="randomFactBtn">Zufallsfakt</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="fakten">
+        <div class="section-head">
+          <h3>Faktenarchiv</h3>
+          <p>Filtere nach Kategorie und entdecke Kernwissen über Ursprung, Medien und Eigenschaften.</p>
+        </div>
+
+        <div class="filter-row glass" id="filters"></div>
+        <div class="facts-grid" id="factsGrid"></div>
+      </section>
+
+      <section class="section" id="power">
+        <div class="section-head">
+          <h3>Power-Profil</h3>
+          <p>Eine spielerische Einschätzung zentraler Marsupilami-Fähigkeiten.</p>
+        </div>
+
+        <div class="glass power-grid" id="powerGrid"></div>
+      </section>
+
+      <section class="section" id="zeitleiste">
+        <div class="section-head">
+          <h3>Erweiterte Zeitleiste</h3>
+          <p>Vom Debüt im Spirou-Kosmos bis zu modernen Adaptionen.</p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section quiz" id="quiz">
+        <div class="section-head">
+          <h3>Titan-Quiz</h3>
+          <p>5 Fragen – aber jetzt mit Fortschrittsbalken.</p>
+        </div>
+        <div class="glass quiz-card">
+          <div class="progress"><span id="progressBar"></span></div>
+          <p id="quizQuestion"></p>
+          <div id="quizAnswers" class="answers"></div>
+          <p id="quizFeedback" class="feedback"></p>
+          <button id="nextQuestion" class="btn primary">Nächste Frage</button>
+        </div>
+      </section>
+
+      <section class="section sources">
+        <div class="section-head">
+          <h3>Quellen (Auswahl)</h3>
+          <p>Diese Seiten wurden als Referenz für die genannten Eckdaten verwendet.</p>
+        </div>
+        <ul class="source-list">
+          <li><a href="https://de.wikipedia.org/wiki/Marsupilami" target="_blank" rel="noreferrer">Wikipedia: Marsupilami</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Marsupilami" target="_blank" rel="noreferrer">Wikipedia (EN): Marsupilami</a></li>
+          <li><a href="https://www.dupuis.com/seriebd/marsupilami/138" target="_blank" rel="noreferrer">Dupuis Verlag: Marsupilami-Reihe</a></li>
+          <li><a href="https://www.imdb.com/title/tt1727638/" target="_blank" rel="noreferrer">IMDb: Sur la piste du Marsupilami (2012)</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="toast" id="toast"></aside>
+
+    <footer>
+      <p>Marsupilami Wiki Titan Edition · Fanprojekt · Houba!</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
